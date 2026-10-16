@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosque & Flor | Taller Floral en Tlalpan, CDMX</title>
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de anuncio superior -->
+    <div class="top-bar">
+        🌿 Envíos el mismo día en el Centro de Tlalpan, Toriello Guerra, Coapa, Pedregal y alrededores.
+    </div>
+
+    <!-- Encabezado y Navegación -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-main">Bosque & Flor</span>
+                <span class="logo-sub">Tlalpan • CDMX</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#nosotros">Nuestro Taller</a>
+                <a href="#zonas">Zonas de Envío</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrito">
+                    <span class="cart-icon">💐</span>
+                    <span class="cart-text">Mi Pedido</span>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-tag">Diseño Floral Artesanal en el Sur de la Ciudad</span>
+            <h1>Flores con alma de bosque, entregadas en tu puerta</h1>
+            <p>Creamos ramos de autor y arreglos botánicos con flores frescas de corte local. Desde el corazón del Centro Histórico de Tlalpan para momentos inolvidables.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo" class="btn btn-primary">Ver Colección</a>
+                <a href="#zonas" class="btn btn-outline">Consultar Cobertura</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios / Características -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌸</div>
+                <h3>Flor Fresca del Día</h3>
+                <p>Seleccionamos cada mañana follajes y flores de productores locales para garantizar máxima duración.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚲</div>
+                <h3>Entrega Local Cuidadosa</h3>
+                <p>Rutas directas en toda la alcaldía Tlalpan y sur de CDMX para que tu arreglo llegue intacto.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✉️</div>
+                <h3>Dedicatoria Caligráfica</h3>
+                <p>Cada pedido incluye una tarjeta en papel algodón con tu mensaje personalizado sin costo extra.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="catalog-section" id="catalogo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Selección Botánica</h2>
+                <p>Elige el arreglo ideal. Todos nuestros diseños se preparan al momento de tu pedido.</p>
+            </div>
+
+            <!-- Filtros de categoría -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="ramos">Ramos de Autor</button>
+                <button class="filter-btn" data-category="jarrones">En Jarrón / Cerámica</button>
+                <button class="filter-btn" data-category="plantas">Plantas y Orquídeas</button>
+            </div>
+
+            <!-- Contenedor dinámico de productos (llenado con JS) -->
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestro Taller -->
+    <section class="about-section" id="nosotros">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=80" alt="Taller floral en Tlalpan">
+            </div>
+            <div class="about-text">
+                <span class="section-subtitle">Raíces en el Sur</span>
+                <h2>Inspirados en la neblina y los jardines antiguos de Tlalpan</h2>
+                <p>Nuestro taller nació a unas calles del Centro de Tlalpan con la idea de alejarnos de los arreglos comerciales tradicionales y crear composiciones orgánicas, con texturas silvestres, eucalipto fresco y flores de estación.</p>
+                <p>Trabajamos con barro bruñido, cerámica artesanal y envolturas biodegradables de papel kraft y lino.</p>
+                <ul class="about-list">
+                    <li>✓ Diseños florales para eventos íntimos y restaurantes</li>
+                    <li>✓ Suscripciones semanales para hogares y estudios</li>
+                    <li>✓ Atención personalizada por floristas locales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zonas de Envío en Tlalpan -->
+    <section class="zones-section" id="zonas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Zonas de Cobertura en Tlalpan y Sur CDMX</h2>
+                <p>Entregamos en dos bloques de horario: Matutino (9:00 a 14:00 hrs) y Vespertino (14:00 a 19:00 hrs).</p>
+            </div>
+
+            <div class="zones-grid">
+                <div class="zone-card">
+                    <h3>Zona 1 • Envío $60 MXN</h3>
+                    <p class="zone-badge">Entrega Express (2 a 3 hrs)</p>
+                    <ul>
+                        <li>Centro de Tlalpan</li>
+                        <li>Toriello Guerra</li>
+                        <li>Isidro Fabela</li>
+                        <li>La Joya / Chimalcoyoc</li>
+                        <li>Fuentes Brotantes</li>
+                        <li>Barrio del Niño Jesús</li>
+                    </ul>
+                </div>
+
+                <div class="zone-card">
+                    <h3>Zona 2 • Envío $95 MXN</h3>
+                    <p class="zone-badge">Mismo Día</p>
+                    <ul>
+                        <li>Villa Coapa / Acoxpa</li>
+                        <li>Vergel Coapa / Prado Coapa</li>
+                        <li>Huipulco / San Lorenzo</li>
+                        <li>Tlalpan Sur / Bosques</li>
+                        <li>Héroes de Padierna</li>
+                        <li>Jardines en la Montaña</li>
+                    </ul>
+                </div>
+
+                <div class="zone-card">
+                    <h3>Zona 3 • Envío $130 MXN</h3>
+                    <p class="zone-badge">Sur de CDMX</p>
+                    <ul>
+                        <li>Jardines del Pedregal</li>
+                        <li>Perisur / Cuicuilco</li>
+                        <li>Coyoacán Centro</li>
+                        <li>San Ángel / Chimalistac</li>
+                        <li>Xochimilco (Zonas seleccionadas)</li>
+                        <li>San Pedro Mártir</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito Lateral (Drawer) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Tu Pedido Floral</h3>
+            <button class="close-cart" id="closeCartBtn" aria-label="Cerrar carrito">&times;</button>
+        </div>
+
+        <div class="cart-body">
+            <!-- Lista de productos agregados -->
+            <div id="cartItemsContainer" class="cart-items"></div>
+
+            <!-- Formulario de entrega rápida -->
+            <div class="cart-form" id="cartFormSection">
+                <h4>Detalles de Entrega en Tlalpan</h4>
+                
+                <label for="customerName">Tu nombre:</label>
+                <input type="text" id="customerName" placeholder="Ej. Sofía Morales">
+
+                <label for="deliveryZone">Colonia / Zona de entrega:</label>
+                <select id="deliveryZone">
+                    <option value="60" data-zone="Zona 1 (Centro de Tlalpan / Toriello / Fuentes Brotantes)">Zona 1: Centro de Tlalpan y alrededores (+$60)</option>
+                    <option value="95" data-zone="Zona 2 (Coapa / Acoxpa / Padierna / Montaña)">Zona 2: Coapa, Acoxpa, Padierna (+$95)</option>
+                    <option value="130" data-zone="Zona 3 (Pedregal / Coyoacán / San Ángel)">Zona 3: Pedregal, Coyoacán, San Ángel (+$130)</option>
+                    <option value="0" data-zone="Recoger en Taller (Centro de Tlalpan)">Recoger en Taller - Centro de Tlalpan ($0)</option>
+                </select>
+
+                <label for="cardMessage">Mensaje para la tarjeta (opcional):</label>
+                <textarea id="cardMessage" rows="2" placeholder="Escribe aquí tu dedicatoria..."></textarea>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotalPrice">$0 MXN</span>
+            </div>
+            <div class="summary-row">
+                <span>Envío estimado:</span>
+                <span id="shippingPrice">$60 MXN</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total:</span>
+                <span id="totalPrice">$0 MXN</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                Confirmar Pedido por WhatsApp
+            </button>
+        </div>
+    </aside>
+
+    <!-- Notificación Toast -->
+    <div id="toast" class="toast">Producto agregado a tu pedido</div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 class="footer-logo">Bosque & Flor</h4>
+                <p>Taller de diseño floral y botánico en el corazón de Tlalpan, Ciudad de México.</p>
+                <p class="footer-address">📍 Calle Moneda s/n, Centro de Tlalpan, 14000, CDMX.</p>
+            </div>
+            <div>
+                <h4>Horarios de Taller</h4>
+                <p>Lunes a Sábado: 8:30 am – 7:30 pm</p>
+                <p>Domingos: 9:30 am – 3:00 pm</p>
+                <p>Tel / WhatsApp: 55 1234 5678</p>
+            </div>
+            <div>
+                <h4>Cuidado de tus Flores</h4>
+                <p>Corta los tallos en diagonal 2 cm cada tercer día y cambia el agua para disfrutar tu ramo por más tiempo.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bosque & Flor Tlalpan. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de funcionalidad -->
+    <script src="script.js"></script>
+</body>
+</html>
